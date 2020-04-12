@@ -1,5 +1,5 @@
-dep/
 .vscode/
+dep/
 
 # Prerequisites
 *.d
