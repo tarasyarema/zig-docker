@@ -8,6 +8,8 @@ RUN apt-get install -y wget git gcc g++ cmake gnupg software-properties-common
 
 RUN apt-get upgrade -y
 
+COPY ./install.sh .
+
 COPY ./dep .
 
 RUN bash install.sh
