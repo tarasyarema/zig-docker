@@ -1,9 +1,12 @@
 # Zig Lang Dockerfile
 
 I had some issues tunning Zig in my Windows machine, so I decided to create a Docker image with the latest build from Zig git.
-You can find more information  about it [here]().
+You can find more information about it [here](https://ziglang.org/).
 
-The image is based on `ubuntu:bionic`, so you can use it as it. It has the zig binary compiled and added to `PATH` so you can just run `zig` globally.
+1. The zig version is `0.5.0+b702964ae`.
+1. The image is based on `ubuntu:bionic`, so you can use it as it. 
+
+It has the zig binary compiled and added to `PATH` so you can just run `zig` globally.
 
 ## Build 
 
