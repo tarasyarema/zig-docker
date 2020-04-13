@@ -1,4 +1,4 @@
-FROM zig:latest
+FROM tarasyarema/zig:latest
 
 WORKDIR /src
 
