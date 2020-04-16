@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 RUN apt-get update && apt-get install -y wget tar xz-utils
 
-ENV ZIG_VERSION=zig-linux-x86_64-0.5.0+b702964ae
+ENV ZIG_VERSION=zig-linux-x86_64-0.6.0
 
 WORKDIR /usr/local/zig
 
