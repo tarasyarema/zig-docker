@@ -3,8 +3,8 @@
 I had some issues tunning Zig in my Windows machine, so I decided to create a Docker image with the latest build from Zig git.
 You can find more information about it [here](https://ziglang.org/).
 
-1. The zig version is `0.5.0+b702964ae`.
-1. The image is based on `ubuntu:bionic`, so you can use it as it. 
+1. The zig version is `0.6.0` (for the latest container).
+1. The image is based on `alpine:latest`, so you can use it as it. The first versions were using `ubuntu:bionic` tho. 
 
 It has the zig binary compiled and added to `PATH` so you can just run `zig` globally.
 
@@ -14,7 +14,7 @@ If you want to build it locally, you can clone this repo and then run the build 
 
 - `docker build -t zig -f Dockerfile.zig .`
 
-If you prefer to use the latest generated image from Dcoer Hub (is generated based on the `Dockerfile.zig`) in this repo:
+If you prefer to use the latest generated image from Docker Hub (is generated based on the `Dockerfile.zig`) in this repo:
 
 - `docker pull tarasyarema/zig:latest`
 
@@ -31,10 +31,10 @@ pub fn main() void {
 }
 ```
 
-You could create a container (i.e. a `Dcokerfile`) to run this file inside it:
+You could create a container (i.e. a `Dockerfile`) to run this file inside it:
 
 ```Dockerfile
-FROM zig:latest
+FROM tarasyarema/zig:latest
 
 WORKDIR /src
 
